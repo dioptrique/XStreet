@@ -34,7 +34,7 @@ XStreet leverages core XRPL features to enable:
 | XRPL API     | `xrpl-py`, JSON-RPC             |
 | Wallets      | Testnet via `generate_faucet_wallet` |
 | Payments     | `ripple_path_find`, Escrow TXs  |
-| Frontend     | HTML / JS or your choice        |
+| Frontend     | HTML / JS    |
 | Storage (opt)| Supabase                        |
 | Dev Runtime  | Bun (for JS/TS development)     |
 
