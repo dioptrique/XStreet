@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 30% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 230 26% 16%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 230 26% 16%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 24% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 230 24% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 230 24% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 100%;
+    --input: 230 24% 26%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 230 30% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 24% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 0 0% 0%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .xrp-gradient {
+    @apply bg-gradient-to-r from-black to-gray-900 border border-white;
+  }
+  
+  .price-change-gradient {
+    @apply bg-gradient-to-r from-price-down to-price-up;
+  }
+}
